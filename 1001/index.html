@@ -1,0 +1,1162 @@
+<html class="scroll-smooth" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Bali Beach Sports &amp; Surf Arena
+  </title>
+  <meta content="World's First Integrated Surf, Sports &amp; Wellness Destination in Bali. Explore the vision, sustainability, and immersive experiences." name="description"/>
+  <meta content="Bali Beach Sports &amp; Surf Arena" property="og:title"/>
+  <meta content="World's First Integrated Surf, Sports &amp; Wellness Destination in Bali." property="og:description"/>
+  <meta content="https://placehold.co/1200x630/png?text=Bali+Beach+Sports+%26+Surf+Arena" property="og:image"/>
+  <meta content="website" property="og:type"/>
+  <link href="https://placehold.co/32x32/png?text=Logo" rel="icon"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <style>
+   /* Custom scrollbar for horizontal timeline */
+    .timeline-scroll::-webkit-scrollbar {
+      height: 8px;
+    }
+    .timeline-scroll::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .timeline-scroll::-webkit-scrollbar-thumb {
+      background-color: #4f46e5;
+      border-radius: 10px;
+    }
+    /* Masonry gallery columns */
+    .masonry {
+      column-count: 4;
+      column-gap: 1rem;
+    }
+    @media (max-width: 1024px) {
+      .masonry {
+        column-count: 3;
+      }
+    }
+    @media (max-width: 640px) {
+      .masonry {
+        column-count: 2;
+      }
+    }
+    /* Lightbox styles */
+    .lightbox-overlay {
+      background: rgba(0,0,0,0.8);
+      position: fixed;
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 50;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .lightbox-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .lightbox-content img {
+      max-height: 90vh;
+      max-width: 90vw;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    }
+   /* Additional styles for icon-circle */
+   .icon-circle {
+      background-color: #3a7d44;
+      color: white;
+      width: 64px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9999px;
+      transition: background-color 0.3s ease;
+      font-size: 28px;
+    }
+    .icon-circle:hover, .icon-circle:focus {
+      background-color: #2e5e33;
+      outline: none;
+    }
+   /* Masonry gallery for gallery section */
+   .masonry {
+    column-count: 1;
+    column-gap: 1rem;
+   }
+   @media (min-width: 640px) {
+    .masonry {
+     column-count: 2;
+    }
+   }
+   @media (min-width: 768px) {
+    .masonry {
+     column-count: 4;
+    }
+   }
+   .masonry > img {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transition: transform 0.3s ease;
+   }
+   .masonry > img:hover,
+   .masonry > img:focus {
+    transform: scale(1.05);
+    outline: none;
+   }
+   /* Hide scrollbar but allow scrolling */
+   .timeline-scroll::-webkit-scrollbar {
+    display: none;
+   }
+   .timeline-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+   }
+    .slide {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+    /* Show the active slide */
+    .slide.active {
+      opacity: 1;
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+    div#sliderTrack img{max-height:700px;}
+  </style>
+<script>
+        // Right-click নিষ্ক্রিয় করতে
+        document.addEventListener('contextmenu', (event) => event.preventDefault());
+
+        // কীবোর্ড শর্টকাট নিষ্ক্রিয় করতে
+        document.addEventListener('keydown', (event) => {
+            if (
+                (event.ctrlKey && event.key === 's') || // Ctrl+S
+                (event.ctrlKey && event.key === 'u') || // Ctrl+U
+                (event.ctrlKey && event.key === 'c') || // Ctrl+C
+                (event.key === 'F12')                  // F12
+            ) {
+                event.preventDefault();
+                alert("This action is disabled on this website.");
+            }
+        });
+
+        // Address bar থেকে লিংক কপি প্রতিরোধ (Referrer কে হ্যান্ডল করা)
+        window.onload = () => {
+            if (window.location !== window.parent.location) {
+                window.parent.location = window.location;
+            }
+        };
+    </script>
+ </head>
+ <body class="font-poppins bg-white text-gray-900">
+  <!-- Sticky Header -->
+  <header class="fixed top-0 left-0 w-full z-50 transition-colors duration-500 bg-[#fff]" id="header">
+   <nav class="max-w-7xl mx-auto flex items-center justify-between p-4 md:px-8">
+    <a class="flex items-center space-x-2" href="#hero">
+     <img alt="Bali Beach Sports &amp; Surf Arena logo, stylized wave and sun icon" class="h-12 w-12" height="48" src="https://storage.googleapis.com/a1aa/image/be56bc1f-05cc-4332-9cf5-b5287b117e18.jpg" width="48"/>
+
+    </a>
+    <div class="hidden md:flex space-x-8 text-white md:text-gray-700 font-semibold">
+     <a class="hover:text-indigo-600 transition" href="#about">
+      About
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#unique">
+      Unique
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#why-bali">
+      Why Bali?
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#gallery">
+      Gallery
+     </a>
+     <a class="hidden hover:text-indigo-600 transition" href="#timeline">
+      Timeline
+     </a>
+     <a class="hidden hover:text-indigo-600 transition" href="#testimonials">
+      Testimonials
+     </a>
+     <a class="hidden hover:text-indigo-600 transition" href="#press">
+      Press
+     </a>
+     <a class="hidden hover:text-indigo-600 transition" href="#newsletter">
+      Newsletter
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#contact">
+      Contact
+     </a>
+    </div>
+    <button class="hidden md:inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-5 py-2 rounded-md transition" id="ctaDesktop">
+     Stay Updated
+    </button>
+    <button aria-label="Open menu" class="md:hidden text-white focus:outline-none" id="menuBtn">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </nav>
+   <!-- Mobile menu -->
+   <div class="fixed inset-0 bg-indigo-900 bg-opacity-95 transform -translate-x-full transition-transform duration-300 ease-in-out z-40" id="mobileMenu">
+    <div class="flex justify-between items-center p-4 border-b border-indigo-700">
+     <a class="flex items-center space-x-2 text-white" href="#hero">
+      <img alt="Bali Beach Sports &amp; Surf Arena logo, stylized wave and sun icon" class="h-12 w-12" height="48" src="https://storage.googleapis.com/a1aa/image/be56bc1f-05cc-4332-9cf5-b5287b117e18.jpg" width="48"/>
+      <span class="font-bold text-xl">
+       Bali Beach Sports
+      </span>
+     </a>
+     <button aria-label="Close menu" class="text-white focus:outline-none" id="menuCloseBtn">
+      <i class="fas fa-times fa-lg">
+      </i>
+     </button>
+    </div>
+    <nav class="flex flex-col space-y-6 p-6 text-white font-semibold text-lg">
+     <a class="hover:text-indigo-300 transition" href="#about" onclick="closeMobileMenu()">
+      About
+     </a>
+     <a class="hover:text-indigo-300 transition" href="#unique" onclick="closeMobileMenu()">
+      Unique
+     </a>
+     <a class="hover:text-indigo-300 transition" href="#why-bali" onclick="closeMobileMenu()">
+      Why Bali?
+     </a>
+     <a class="hover:text-indigo-300 transition" href="#gallery" onclick="closeMobileMenu()">
+      Gallery
+     </a>
+     <a class="hover:text-indigo-300 transition" href="#timeline" onclick="closeMobileMenu()">
+      Timeline
+     </a>
+     <a class="hover:text-indigo-300 transition" href="#testimonials" onclick="closeMobileMenu()">
+      Testimonials
+     </a>
+     <a class="hover:text-indigo-300 transition" href="#press" onclick="closeMobileMenu()">
+      Press
+     </a>
+     <a class="hover:text-indigo-300 transition" href="#newsletter" onclick="closeMobileMenu()">
+      Newsletter
+     </a>
+     <a class="hover:text-indigo-300 transition" href="#contact" onclick="closeMobileMenu()">
+      Contact
+     </a>
+     <button class="mt-4 bg-indigo-600 hover:bg-indigo-700 rounded-md py-2 font-semibold" onclick="closeMobileMenu()">
+      Stay Updated
+     </button>
+    </nav>
+   </div>
+  </header>
+  <!-- Hero Section -->
+<section class="relative h-screen w-full overflow-hidden" id="hero">
+   <div class="absolute inset-0 z-0">
+    <img alt="A vibrant Bali beach with surfers riding waves under a bright blue sky, palm trees lining the shore, and golden sunlight reflecting on the ocean" aria-hidden="true" class="slide active" height="1080" src="https://storage.googleapis.com/a1aa/image/8838032e-37dc-4cb1-d132-9e6d1ca45e7c.jpg" width="1920"/>
+    <img alt="Sunset view of Bali beach with surfers carrying surfboards walking along the shore, with colorful skies and calm waves" aria-hidden="true" class="slide" height="1080" src="https://storage.googleapis.com/a1aa/image/bc384aba-ae4b-4f39-a9cc-af6e9f53c739.jpg" width="1920"/>
+    <img alt="Early morning Bali beach with mist over the ocean, surfers preparing their boards near palm trees and soft pastel sky" aria-hidden="true" class="slide" height="1080" src="https://storage.googleapis.com/a1aa/image/abad15d6-0caa-4d3b-8c7e-4c52c77b90d1.jpg" width="1920"/>
+    <video aria-label="Video showing Bali Beach Sports &amp; Surf Arena with waves and surfers" autoplay="" class="w-full h-full object-cover absolute inset-0" loop="" muted="" playsinline="">
+     <source src="https://placehold.co/1920x1080/mp4?text=Bali+Beach+Sports+Hero+Video" type="video/mp4"/>
+     Your browser does not support the video tag.
+    </video>
+    <div class="absolute inset-0 bg-black bg-opacity-50">
+    </div>
+   </div>
+   <div class="relative z-10 max-w-7xl mx-auto h-full flex flex-col justify-center items-center px-6 md:px-12 text-white text-center md:text-left">
+    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight max-w-4xl drop-shadow-lg" data-aos="fade-zoom-in" data-aos-delay="200">
+     Bali Beach Sports &amp; Surf Arena
+    </h1>
+    <p class="mt-4 text-lg md:text-2xl max-w-3xl font-light drop-shadow-md" data-aos="fade-left" data-aos-delay="400">
+     World's First Integrated Surf, Sports &amp; Wellness Destination
+    </p>
+    <div class="mt-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 w-full max-w-md mx-auto sm:mx-0" data-aos="fade-up" data-aos-delay="600">
+     <a class="bg-indigo-600 hover:bg-indigo-700 transition text-white font-semibold px-6 py-3 rounded-md shadow-lg text-center flex-1" href="#about">
+      Explore the Vision
+     </a>
+     <a class="bg-transparent border border-white hover:bg-white hover:text-indigo-700 transition text-white font-semibold px-6 py-3 rounded-md shadow-lg flex items-center justify-center space-x-2 flex-1" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" rel="noopener" target="_blank">
+      <i class="fas fa-play">
+      </i>
+      <span>
+       Watch the Concept Video
+      </span>
+     </a>
+    </div>
+   </div>
+  </section>
+  <script>
+   const slides = document.querySelectorAll('.slide');
+    let current = 0;
+    const slideCount = slides.length;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      current = (current + 1) % slideCount;
+      showSlide(current);
+    }
+
+    setInterval(nextSlide, 6000);
+  </script>
+  <!-- About the Vision -->
+  <section class="max-w-7xl mx-auto px-6 md:px-12 py-20 flex flex-col md:flex-row items-center gap-12" id="about">
+   <div class="md:w-1/2" data-aos="zoom-in">
+    <img alt="Aerial view of Bali beach with surfers and sports arena, tropical landscape with ocean waves and palm trees" class="rounded-lg shadow-lg w-full object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/44181a77-2e21-4859-6ba5-b4abbe958a8e.jpg" width="600"/>
+   </div>
+   <div class="md:w-1/2 space-y-6" data-aos="fade-left">
+    <h2 class="text-3xl font-bold text-indigo-700">
+     About the Vision
+    </h2>
+    <p class="text-gray-700 text-lg leading-relaxed">
+     Bali Beach Sports &amp; Surf Arena is designed to be the world’s first fully integrated surf, sports, and wellness destination. Nestled on Bali’s pristine coastline, it offers an unparalleled experience combining nature, sport, and community.
+    </p>
+    <div aria-label="Icon badges representing beach, yoga, and surfing" class="flex space-x-6 text-4xl">
+     <span title="Beach">
+      <i class="fas fa-umbrella-beach text-indigo-600">
+      </i>
+     </span>
+     <span title="Wellness Yoga">
+      <i class="fas fa-spa text-indigo-600">
+      </i>
+     </span>
+     <span title="Surfing">
+      <i class="fas fa-water text-indigo-600">
+      </i>
+     </span>
+    </div>
+   </div>
+  </section>
+  <!-- What Makes Us Unique -->
+  <section
+    aria-label="What makes us unique"
+    class="max-w-7xl mx-auto px-6 py-16 sm:py-20"
+    id="unique"
+  >
+    <h2
+      class="text-4xl sm:text-5xl font-playfair-display font-bold text-center text-[#0A2342] mb-16"
+    >
+      What Makes Us Unique
+    </h2>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto"
+    >
+      <article
+        aria-label="World-Class Surf Circuit"
+        class="bg-white rounded-3xl p-10 shadow-lg flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.06] focus:scale-[1.06] focus:outline-none"
+        role="article"
+        tabindex="0"
+      >
+        <div class="icon-circle mb-6">
+          <i class="fas fa-water" aria-hidden="true"></i>
+        </div>
+        <h3 class="text-2xl font-playfair-display font-bold mb-3 text-[#0A2342]">
+          World-Class Surf Circuit
+        </h3>
+        <p class="text-[#0A2342] leading-relaxed max-w-[280px]">
+          Cutting-edge wave pools and training facilities for surfers of all levels.
+        </p>
+      </article>
+
+      <article
+        aria-label="Nature-Integrated Architecture"
+        class="bg-white rounded-3xl p-10 shadow-lg flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.06] focus:scale-[1.06] focus:outline-none"
+        role="article"
+        tabindex="0"
+      >
+        <div class="icon-circle mb-6">
+          <i class="fas fa-leaf" aria-hidden="true"></i>
+        </div>
+        <h3 class="text-2xl font-playfair-display font-bold mb-3 text-[#0A2342]">
+          Nature-Integrated Architecture
+        </h3>
+        <p class="text-[#0A2342] leading-relaxed max-w-[280px]">
+          Sustainable design blending seamlessly with Bali’s tropical environment.
+        </p>
+      </article>
+
+      <article
+        aria-label="Year-Round Operation"
+        class="bg-white rounded-3xl p-10 shadow-lg flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.06] focus:scale-[1.06] focus:outline-none"
+        role="article"
+        tabindex="0"
+      >
+        <div class="icon-circle mb-6">
+          <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+        </div>
+        <h3 class="text-2xl font-playfair-display font-bold mb-3 text-[#0A2342]">
+          Year-Round Operation
+        </h3>
+        <p class="text-[#0A2342] leading-relaxed max-w-[280px]">
+          Leveraging Bali’s climate for continuous sports and wellness activities.
+        </p>
+      </article>
+
+      <article
+        aria-label="Full Lifestyle Integration"
+        class="bg-white rounded-3xl p-10 shadow-lg flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.06] focus:scale-[1.06] focus:outline-none"
+        role="article"
+        tabindex="0"
+      >
+        <div class="icon-circle mb-6">
+          <i class="fas fa-spa" aria-hidden="true"></i>
+        </div>
+        <h3 class="text-2xl font-playfair-display font-bold mb-3 text-[#0A2342]">
+          Full Lifestyle Integration
+        </h3>
+        <p class="text-[#0A2342] leading-relaxed max-w-[280px]">
+          Combining elite sports, wellness, accommodation, and entertainment in one destination.
+        </p>
+      </article>
+
+      <article
+        aria-label="Community Engagement"
+        class="bg-white rounded-3xl p-10 shadow-lg flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.06] focus:scale-[1.06] focus:outline-none"
+        role="article"
+        tabindex="0"
+      >
+        <div class="icon-circle mb-6">
+          <i class="fas fa-users" aria-hidden="true"></i>
+        </div>
+        <h3 class="text-2xl font-playfair-display font-bold mb-3 text-[#0A2342]">
+          Community Engagement
+        </h3>
+        <p class="text-[#0A2342] leading-relaxed max-w-[280px]">
+          Empowering local communities through jobs and sustainable tourism.
+        </p>
+      </article>
+
+      <article
+        aria-label="Global Events & Competitions"
+        class="bg-white rounded-3xl p-10 shadow-lg flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.06] focus:scale-[1.06] focus:outline-none"
+        role="article"
+        tabindex="0"
+      >
+        <div class="icon-circle mb-6">
+          <i class="fas fa-trophy" aria-hidden="true"></i>
+        </div>
+        <h3 class="text-2xl font-playfair-display font-bold mb-3 text-[#0A2342]">
+          Global Events & Competitions
+        </h3>
+        <p class="text-[#0A2342] leading-relaxed max-w-[280px]">
+          Hosting world-class tournaments and cultural events year-round.
+        </p>
+      </article>
+
+      <article
+        aria-label="Cutting-Edge Technology"
+        class="bg-white rounded-3xl p-10 shadow-lg flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.06] focus:scale-[1.06] focus:outline-none"
+        role="article"
+        tabindex="0"
+      >
+        <div class="icon-circle mb-6">
+          <i class="fas fa-cogs" aria-hidden="true"></i>
+        </div>
+        <h3 class="text-2xl font-playfair-display font-bold mb-3 text-[#0A2342]">
+          Cutting-Edge Technology
+        </h3>
+        <p class="text-[#0A2342] leading-relaxed max-w-[280px]">
+          Innovative surf pool tech and smart facility management systems.
+        </p>
+      </article>
+
+      <article
+        aria-label="Eco-Friendly Transportation"
+        class="bg-white rounded-3xl p-10 shadow-lg flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.06] focus:scale-[1.06] focus:outline-none"
+        role="article"
+        tabindex="0"
+      >
+        <div class="icon-circle mb-6">
+          <i class="fas fa-bicycle" aria-hidden="true"></i>
+        </div>
+        <h3 class="text-2xl font-playfair-display font-bold mb-3 text-[#0A2342]">
+          Eco-Friendly Transportation
+        </h3>
+        <p class="text-[#0A2342] leading-relaxed max-w-[280px]">
+          Promoting sustainable travel options including bike rentals and electric vehicles.
+        </p>
+      </article>
+
+      <article
+        aria-label="Exclusive Wellness Programs"
+        class="hidden bg-white rounded-3xl p-10 shadow-lg flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.06] focus:scale-[1.06] focus:outline-none"
+        role="article"
+        tabindex="0"
+      >
+        <div class="icon-circle mb-6">
+          <i class="fas fa-heartbeat" aria-hidden="true"></i>
+        </div>
+        <h3 class="text-2xl font-playfair-display font-bold mb-3 text-[#0A2342]">
+          Exclusive Wellness Programs
+        </h3>
+        <p class="text-[#0A2342] leading-relaxed max-w-[280px]">
+          Tailored health and wellness experiences designed to rejuvenate body and mind.
+        </p>
+      </article>
+    </div>
+  </section>
+  <!-- Why Bali? -->
+  <section aria-label="Why Bali section" class="relative w-full py-24 overflow-hidden" id="bali-advantage">
+   <img alt="Beautiful aerial view of Bali coastline with beaches and ocean under bright sunlight with turquoise water and white sandy beaches" class="absolute inset-0 w-full h-full object-cover brightness-75" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/2aec52ce-2e83-4fd0-aa82-5b0d7f37d252.jpg" width="1920"/>
+   <div class="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center text-white">
+    <div class="space-y-8" data-aos="fade-right">
+     <h2 class="text-5xl md:text-6xl font-playfair-display font-bold tracking-wide drop-shadow-lg">
+      Why Bali?
+     </h2>
+     <p class="text-lg md:text-xl max-w-xl font-open-sans drop-shadow-md">
+      Discover the unique advantages that make Bali a top destination for travelers worldwide.
+     </p>
+     <ul class="space-y-6">
+      <li class="flex items-center space-x-4 text-2xl md:text-3xl font-open-sans drop-shadow-md">
+       <span class="inline-flex items-center justify-center w-12 h-12 bg-red-500 rounded-full text-white shadow-lg">
+        <i class="fas fa-chart-line text-xl md:text-2xl"></i>
+       </span>
+       <span class="text-xl md:text-2xl font-semibold">
+        6M+ Annual Tourists
+       </span>
+      </li>
+      <li class="flex items-center space-x-4 text-2xl md:text-3xl font-open-sans drop-shadow-md">
+       <span class="inline-flex items-center justify-center w-12 h-12 bg-blue-600 rounded-full text-white shadow-lg">
+        <i class="fas fa-plane-departure text-xl md:text-2xl"></i>
+       </span>
+       <span class="text-xl md:text-2xl font-semibold">
+        Direct Access from 30+ Countries
+       </span>
+      </li>
+      <li class="flex items-center space-x-4 text-2xl md:text-3xl font-open-sans drop-shadow-md">
+       <span class="inline-flex items-center justify-center w-12 h-12 bg-green-600 rounded-full text-white shadow-lg">
+        <i class="fas fa-spa text-xl md:text-2xl"></i>
+       </span>
+       <span class="text-xl md:text-2xl font-semibold">
+        Wellness Capital of Asia
+       </span>
+      </li>
+     </ul>
+    </div>
+    <div class="hidden md:block">
+     <img alt="Close-up of a serene Balinese woman meditating on a cliff overlooking the ocean at sunrise with lush greenery around" class="rounded-xl shadow-2xl object-cover w-full h-full max-h-[600px]" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/28c9f88a-4eb2-47bf-4a40-ce78b9afec59.jpg" width="600"/>
+    </div>
+   </div>
+  </section>
+  <!-- Sustainability & Social Impact -->
+  <section class="max-w-7xl mx-auto px-6 md:px-12 py-20 flex flex-col md:flex-row items-center gap-12" id="sustainability">
+   <div class="md:w-1/2 flex flex-col space-y-6" data-aos="fade-in">
+    <img alt="Local Balinese community members planting trees near the beach with tropical greenery and ocean in background" class="rounded-lg shadow-lg object-cover w-full h-64" height="280" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9cd5f3fb-0381-4f65-77eb-43c2763fc826.jpg" width="600"/>
+    <img alt="Eco-friendly architecture with bamboo and natural materials surrounded by lush tropical plants and sunlight" class="rounded-lg shadow-lg object-cover w-full h-64" height="280" loading="lazy" src="https://storage.googleapis.com/a1aa/image/6cf78e5d-02e7-46df-fd41-d06f65eb6f28.jpg" width="600"/>
+   </div>
+   <div class="md:w-1/2 space-y-8" data-aos="fade-left">
+    <h2 class="text-3xl font-bold text-indigo-700">
+     Sustainability &amp; Social Impact
+    </h2>
+    <ul class="list-disc list-inside text-gray-700 text-lg space-y-4">
+     <li>
+      Thousands of Jobs for Locals
+     </li>
+     <li>
+      Community-Based Tourism
+     </li>
+     <li>
+      Eco-first Development Strategy
+     </li>
+    </ul>
+   </div>
+  </section>
+  <!-- Visual Showcase Gallery -->
+  <section class="py-20 px-6 md:px-12" id="gallery" aria-label="Visual showcase gallery">
+   <div class="max-w-7xl mx-auto mb-12 text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-indigo-700">The Future Comes to Life</h2>
+   </div>
+   <!-- Full-width slider -->
+   <div class="relative w-full mb-16" data-aos="zoom-in">
+    <div class="overflow-hidden rounded-lg shadow-lg" id="slider">
+     <div class="flex transition-transform duration-700 ease-in-out" id="sliderTrack" style="transform: translateX(0%)">
+      <img alt="Wide shot of Bali Beach Sports surf arena with surfers riding waves and spectators watching under blue sky" class="w-full flex-shrink-0 object-cover" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/59406f2b-acab-402c-ebfc-8b01e989965f.jpg" width="1920" />
+      <img alt="Group yoga session on a wooden deck overlooking the ocean at sunrise with participants in meditative poses" class="w-full flex-shrink-0 object-cover" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ce888f4e-1e4f-4def-733d-bda5c5114439.jpg" width="1920" />
+      <img alt="Biking trail through lush tropical forest with sunlight filtering through dense green leaves" class="w-full flex-shrink-0 object-cover" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4b20f4d4-0624-4b00-9a29-b0aea271d04d.jpg" width="1920" />
+      <img alt="Local community event with families and children enjoying cultural performances near the beach" class="w-full flex-shrink-0 object-cover" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9b6ac358-95d7-4ec2-6c20-1f685c5c37a2.jpg" width="1920" />
+      <img alt="Outdoor gourmet dining setup with tropical flowers, candlelight, and ocean view at dusk" class="w-full flex-shrink-0 object-cover" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/1ae680fc-ee7a-46f5-c6e8-9e328c0c087a.jpg" width="1920" />
+     </div>
+    </div>
+    <button aria-label="Previous slide" class="absolute top-1/2 left-4 -translate-y-1/2 bg-indigo-700 bg-opacity-70 hover:bg-opacity-90 text-white rounded-full p-3 shadow-lg focus:outline-none" id="prevBtn">
+     <i class="fas fa-chevron-left"></i>
+    </button>
+    <button aria-label="Next slide" class="absolute top-1/2 right-4 -translate-y-1/2 bg-indigo-700 bg-opacity-70 hover:bg-opacity-90 text-white rounded-full p-3 shadow-lg focus:outline-none" id="nextBtn">
+     <i class="fas fa-chevron-right"></i>
+    </button>
+   </div>
+      <!-- Mini-map clickable thumbnails -->
+   <div class="max-w-7xl mx-auto my-12 flex justify-center space-x-4 overflow-x-auto" data-aos="zoom-in">
+    <button aria-label="Thumbnail 1" class="w-20 h-20 rounded-lg overflow-hidden shadow-lg border-4 border-indigo-600 focus:outline-none" data-index="0" tabindex="0">
+     <img alt="Thumbnail image 1 showing surf arena with waves and spectators" class="object-cover w-full h-full" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/59406f2b-acab-402c-ebfc-8b01e989965f.jpg" width="80" />
+    </button>
+    <button aria-label="Thumbnail 2" class="w-20 h-20 rounded-lg overflow-hidden shadow-lg border-4 border-indigo-600 focus:outline-none" data-index="1" tabindex="0">
+     <img alt="Thumbnail image 2 showing group yoga session on ocean deck at sunrise" class="object-cover w-full h-full" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ce888f4e-1e4f-4def-733d-bda5c5114439.jpg" width="80" />
+    </button>
+    <button aria-label="Thumbnail 3" class="w-20 h-20 rounded-lg overflow-hidden shadow-lg border-4 border-indigo-600 focus:outline-none" data-index="2" tabindex="0">
+     <img alt="Thumbnail image 3 showing biking trail through tropical forest" class="object-cover w-full h-full" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4b20f4d4-0624-4b00-9a29-b0aea271d04d.jpg" width="80" />
+    </button>
+    <button aria-label="Thumbnail 4" class="w-20 h-20 rounded-lg overflow-hidden shadow-lg border-4 border-indigo-600 focus:outline-none" data-index="3" tabindex="0">
+     <img alt="Thumbnail image 4 showing local community event near the beach" class="object-cover w-full h-full" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9b6ac358-95d7-4ec2-6c20-1f685c5c37a2.jpg" width="80" />
+    </button>
+    <button aria-label="Thumbnail 5" class="w-20 h-20 rounded-lg overflow-hidden shadow-lg border-4 border-indigo-600 focus:outline-none" data-index="4" tabindex="0">
+     <img alt="Thumbnail image 5 showing outdoor gourmet dining setup with ocean view" class="object-cover w-full h-full" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/1ae680fc-ee7a-46f5-c6e8-9e328c0c087a.jpg" width="80" />
+    </button>
+   </div>
+   <!-- Masonry-style gallery -->
+   <div class="masonry gap-4 max-w-7xl mx-auto" data-aos="zoom-in">
+    <img alt="Closeup of surfer riding a powerful wave with spray and sunlight" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/f628fec2-3bc3-48d1-2072-9568a816b1e0.jpg" width="400" tabindex="0" />
+    <img alt="Sunset over Bali beach with orange and purple sky reflecting on wet sand and palm silhouettes" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/12d106e8-1a1c-4be8-9df5-f985735b381f.jpg" width="400" tabindex="0" />
+    <img alt="Wellness retreat pavilion with open-air design surrounded by tropical plants and calm water" height="500" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a78f7a42-674b-4453-182e-c5b6de28687e.jpg" width="400" tabindex="0" />
+    <img alt="Colorful local market with fresh fruits, vegetables, and handmade crafts in Bali" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/23cece34-070e-4562-029b-deeafe46627e.jpg" width="400" tabindex="0" />
+    <img alt="Surfers competing in a professional surf competition with judges and crowd" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/1f11d5ae-1b31-48b9-5ecc-c6a39f83b97e.jpg" width="400" tabindex="0" />
+    <img alt="Yoga class in session on a beachside platform with ocean view and morning light" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/f4486710-7a9d-4602-1798-525883f30135.jpg" width="400" tabindex="0" />
+    <img alt="Eco-friendly bamboo structure with open walls and tropical garden surroundings" height="500" loading="lazy" src="https://storage.googleapis.com/a1aa/image/99706944-e754-4645-7bc1-194bd079a503.jpg" width="400" tabindex="0" />
+    <img alt="Night event with string lights, music stage, and crowd enjoying the beach atmosphere" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/e9ef204a-3612-42ac-960c-aaa9044a3650.jpg" width="400" tabindex="0" />
+    <img alt="Aerial drone shot of Bali coastline with turquoise water, coral reefs, and sandy beaches" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/5b15db16-3491-40dd-c0c0-089109525f98.jpg" width="400" tabindex="0" />
+    <img alt="Balinese artisans crafting traditional wood carvings in an open-air workshop" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ca286dd6-cf2d-4604-6c1e-c4feebe270e0.jpg" width="400" tabindex="0" />
+    <img alt="Outdoor fitness area with people exercising and tropical greenery around" height="500" loading="lazy" src="https://storage.googleapis.com/a1aa/image/492158a6-4130-4532-4953-2959613c5c2d.jpg" width="400" tabindex="0" />
+    <img alt="Surf instructor teaching beginners on a calm beach with small waves" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/84606d02-7873-46e6-d0a5-3f4553cbf447.jpg" width="400" tabindex="0" />
+    <img alt="Closeup of tropical flowers and plants native to Bali with vibrant colors" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/2acc6f96-3de3-4426-1817-2ec533a66635.jpg" width="400" tabindex="0" />
+    <img alt="Community gathering with traditional Balinese dance and music performance" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ebe58ac5-b6c9-4659-a15d-2ca213534456.jpg" width="400" tabindex="0" />
+    <img alt="Healthy tropical cuisine served on a wooden table with fresh fruits and salads" height="500" loading="lazy" src="https://storage.googleapis.com/a1aa/image/185ca152-6c14-476b-d0d5-91978c82656f.jpg" width="400" tabindex="0" />
+    <img alt="Surfer paddling out at sunrise with golden light reflecting on the water" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/685d5c65-a3cb-4326-60c5-06e04462c4e4.jpg" width="400" tabindex="0" />
+   </div>
+  </section>
+  <!-- Timeline / Development Phases Carousel -->
+  <section class="max-w-7xl mx-auto px-6 md:px-12 py-20" id="timeline" aria-label="Development timeline">
+   <h2 class="text-3xl font-bold text-indigo-700 mb-12 text-center" data-aos="fade-up">
+    Development Phases
+   </h2>
+   <div class="relative max-w-4xl mx-auto" data-aos="fade-up">
+    <div class="overflow-hidden rounded-lg shadow-lg">
+     <div class="flex transition-transform duration-500 ease-in-out" id="timelineTrack" style="transform: translateX(0);">
+      <article class="flex-shrink-0 bg-white rounded-lg shadow-lg p-6 w-64 text-center mx-2" tabindex="0">
+       <div class="text-indigo-600 mb-4 text-4xl">
+        <i class="fas fa-seedling"></i>
+       </div>
+       <h3 class="font-semibold text-xl mb-2">2024</h3>
+       <p>Groundbreaking</p>
+      </article>
+      <article class="flex-shrink-0 bg-white rounded-lg shadow-lg p-6 w-64 text-center mx-2" tabindex="0">
+       <div class="text-indigo-600 mb-4 text-4xl">
+        <i class="fas fa-water"></i>
+       </div>
+       <h3 class="font-semibold text-xl mb-2">2025</h3>
+       <p>Surf &amp; Beach Arena Opens</p>
+      </article>
+      <article class="flex-shrink-0 bg-white rounded-lg shadow-lg p-6 w-64 text-center mx-2" tabindex="0">
+       <div class="text-indigo-600 mb-4 text-4xl">
+        <i class="fas fa-spa"></i>
+       </div>
+       <h3 class="font-semibold text-xl mb-2">2026</h3>
+       <p>Wellness Campus Launch</p>
+      </article>
+      <article class="flex-shrink-0 bg-white rounded-lg shadow-lg p-6 w-64 text-center mx-2" tabindex="0">
+       <div class="text-indigo-600 mb-4 text-4xl">
+        <i class="fas fa-users"></i>
+       </div>
+       <h3 class="font-semibold text-xl mb-2">2027</h3>
+       <p>Community Expansion</p>
+      </article>
+      <article class="flex-shrink-0 bg-white rounded-lg shadow-lg p-6 w-64 text-center mx-2" tabindex="0">
+       <div class="text-indigo-600 mb-4 text-4xl">
+        <i class="fas fa-globe"></i>
+       </div>
+       <h3 class="font-semibold text-xl mb-2">2028</h3>
+       <p>Global Surf Circuit Integration</p>
+      </article>
+     </div>
+    </div>
+    <button aria-label="Previous phase" id="timelinePrev" class="absolute top-1/2 left-0 -translate-y-1/2 bg-indigo-700 bg-opacity-70 hover:bg-opacity-90 text-white rounded-full p-3 shadow-lg focus:outline-none">
+     <i class="fas fa-chevron-left"></i>
+    </button>
+    <button aria-label="Next phase" id="timelineNext" class="absolute top-1/2 right-0 -translate-y-1/2 bg-indigo-700 bg-opacity-70 hover:bg-opacity-90 text-white rounded-full p-3 shadow-lg focus:outline-none">
+     <i class="fas fa-chevron-right"></i>
+    </button>
+   </div>
+  </section>
+  <script>
+   (() => {
+
+
+    // Timeline carousel
+    const timelineTrack = document.getElementById("timelineTrack");
+    const timelinePrev = document.getElementById("timelinePrev");
+    const timelineNext = document.getElementById("timelineNext");
+    const timelineItems = timelineTrack.children;
+    const timelineCount = timelineItems.length;
+    let timelineIndex = 0;
+
+    function updateTimeline() {
+     const itemWidth = timelineItems[0].getBoundingClientRect().width + 16; // width + margin-x (mx-2 = 0.5rem * 2 = 16px)
+     timelineTrack.style.transform = `translateX(-${timelineIndex * itemWidth}px)`;
+    }
+
+    timelinePrev.addEventListener("click", () => {
+     timelineIndex = Math.max(timelineIndex - 1, 0);
+     updateTimeline();
+    });
+
+    timelineNext.addEventListener("click", () => {
+     timelineIndex = Math.min(timelineIndex + 1, timelineCount - 1);
+     updateTimeline();
+    });
+
+    window.addEventListener("resize", updateTimeline);
+
+    updateTimeline();
+   })();
+  </script>
+  <!-- Testimonials -->
+  <section class="bg-indigo-50 py-20 px-6 md:px-12" id="testimonials">
+   <div class="max-w-7xl mx-auto text-center mb-12" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-indigo-700">
+     Endorsements &amp; Testimonials
+    </h2>
+   </div>
+   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col items-center text-center" data-aos="fade-right" data-aos-delay="100">
+     <img alt="Portrait of professional surf champion with ocean background" class="rounded-full mb-6" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a2d42b51-c06d-4557-19e2-df9356b4cb75.jpg" width="96"/>
+     <blockquote class="text-gray-700 italic mb-4">
+      "Bali Beach Sports Arena is a game-changer for surfers worldwide. The waves and facilities are unmatched."
+     </blockquote>
+     <p class="font-semibold text-indigo-600">
+      Kai Lenny, Surf Champion
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="200">
+     <img alt="Portrait of Bali tourism board representative smiling with tropical background" class="rounded-full mb-6" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/775863dc-7f1a-4a3c-8faa-6c17ad14c55d.jpg" width="96"/>
+     <blockquote class="text-gray-700 italic mb-4">
+      "This project elevates Bali’s position as a global wellness and sports destination."
+     </blockquote>
+     <p class="font-semibold text-indigo-600">
+      Made Wijaya, Bali Tourism Board
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col items-center text-center" data-aos="fade-left" data-aos-delay="300">
+     <img alt="Portrait of investor in business attire with modern office background" class="rounded-full mb-6" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/98d9f1de-40cd-4c64-4ab6-f838d907314c.jpg" width="96"/>
+     <blockquote class="text-gray-700 italic mb-4">
+      "A visionary development with strong community and sustainability focus."
+     </blockquote>
+     <p class="font-semibold text-indigo-600">
+      Samantha Lee, Investor
+     </p>
+    </div>
+   </div>
+   <div aria-label="Partner logos" class="max-w-7xl mx-auto mt-12 flex justify-center space-x-12" data-aos="fade-up" data-aos-delay="400">
+    <img alt="ESPN logo" class="h-10 object-contain" height="40" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9f1da820-ed85-47e6-3c59-28d62872789f.jpg" width="120"/>
+    <img alt="Surfline logo" class="h-10 object-contain" height="40" loading="lazy" src="https://storage.googleapis.com/a1aa/image/afae1cc1-3017-4b95-5171-1b94e8af8be3.jpg" width="120"/>
+    <img alt="Bloomberg logo" class="h-10 object-contain" height="40" loading="lazy" src="https://storage.googleapis.com/a1aa/image/bd5f6593-1472-49c1-5373-5996c9a17858.jpg" width="120"/>
+    <img alt="Red Bull logo" class="h-10 object-contain" height="40" loading="lazy" src="https://storage.googleapis.com/a1aa/image/26f40099-e4bb-4df9-cfd5-ad7af2ef54af.jpg" width="120"/>
+   </div>
+  </section>
+  <!-- Press Mentions -->
+  <section class="py-20 px-6 md:px-12" id="press">
+   <div class="max-w-7xl mx-auto text-center mb-12" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-indigo-700">
+     As Seen In
+    </h2>
+   </div>
+   <div class="max-w-7xl mx-auto flex flex-wrap justify-center items-center gap-12" data-aos="zoom-in">
+    <img alt="ESPN logo" class="h-16 object-contain" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9f1da820-ed85-47e6-3c59-28d62872789f.jpg" width="160"/>
+    <img alt="Surfline logo" class="h-16 object-contain" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/afae1cc1-3017-4b95-5171-1b94e8af8be3.jpg" width="160"/>
+    <img alt="Bloomberg logo" class="h-16 object-contain" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/bd5f6593-1472-49c1-5373-5996c9a17858.jpg" width="160"/>
+    <img alt="Red Bull logo" class="h-16 object-contain" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/26f40099-e4bb-4df9-cfd5-ad7af2ef54af.jpg" width="160"/>
+    <img alt="National Geographic logo" class="h-16 object-contain" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/20e969e9-1818-48ee-19c5-38870c3e3feb.jpg" width="160"/>
+    <img alt="Forbes logo" class="h-16 object-contain" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/e72937fb-4b7b-4324-d71a-5587d9d0f816.jpg" width="160"/>
+   </div>
+  </section>
+  <!-- Newsletter Signup -->
+  <section class="relative bg-indigo-900 text-white py-20 px-6 md:px-12 overflow-hidden" id="newsletter">
+   <img alt="Calm ocean with gentle waves and tropical trees in the background under soft sunlight" class="absolute inset-0 w-full h-full object-cover object-center opacity-30" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/3d66f662-d564-4929-8762-13639b093acf.jpg" width="1920"/>
+   <div class="relative max-w-3xl mx-auto text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6">
+     Get the latest updates, sneak previews, and launch invites.
+    </h2>
+    <form class="flex flex-col sm:flex-row gap-4 justify-center" id="newsletterForm" novalidate="">
+     <input aria-label="Email address" class="rounded-md px-4 py-3 text-gray-900 w-full sm:w-auto flex-grow focus:outline-none focus:ring-2 focus:ring-indigo-400" id="emailInput" name="email" placeholder="Enter your email" required="" type="email"/>
+     <button class="bg-indigo-600 hover:bg-indigo-700 rounded-md px-6 py-3 font-semibold transition" type="submit">
+      Join the Movement
+     </button>
+    </form>
+    <p class="mt-4 text-sm" id="newsletterMessage">
+    </p>
+   </div>
+  </section>
+  <!-- Contact Form + Location -->
+  <section class="max-w-7xl mx-auto px-6 md:px-12 py-20 flex flex-col md:flex-row gap-12" id="contact">
+   <div class="md:w-1/2" data-aos="fade-right">
+    <h2 class="text-3xl font-bold text-indigo-700 mb-6">
+     Contact Us
+    </h2>
+    <form class="space-y-6" id="contactForm" novalidate="">
+     <div>
+      <label class="block text-gray-700 font-semibold mb-1" for="name">
+       Name
+      </label>
+      <input aria-required="true" class="w-full rounded-md border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="name" name="name" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-1" for="email">
+       Email
+      </label>
+      <input aria-required="true" class="w-full rounded-md border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="email" name="email" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-1" for="message">
+       Message
+      </label>
+      <textarea aria-required="true" class="w-full rounded-md border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="message" name="message" required="" rows="5"></textarea>
+     </div>
+     <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-md transition" type="submit">
+      Send Message
+     </button>
+     <p class="mt-2 text-sm" id="contactMessage">
+     </p>
+    </form>
+   </div>
+   <div aria-label="Location map" class="md:w-1/2 relative rounded-lg overflow-hidden shadow-lg" data-aos="fade-left">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.720665943884!2d115.16641447579559!3d-8.718053288885637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd246bc988407b1%3A0xbf3607d0472a6a5f!2sJl.%20Pantai%20Kuta%2C%20Kec.%20Kuta%2C%20Kabupaten%20Badung%2C%20Bali%2C%20Indonesia!5e0!3m2!1sen!2sbd!4v1752010384098!5m2!1sen!2sbd" width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="absolute bottom-16 left-4 bg-white bg-opacity-80 rounded-md p-4 shadow-md max-w-xs">
+     <h3 class="font-semibold text-indigo-700 mb-1">
+      Our Location
+     </h3>
+     <p class="text-gray-700 text-sm">
+      Jl. Pantai Kuta, Bali, Indonesia
+     </p>
+     <p class="text-gray-700 text-sm">
+      Phone: +62 361 1234567
+     </p>
+     <p class="text-gray-700 text-sm">
+      Email: info@balibeachsports.com
+     </p>
+     <div class="flex space-x-4 mt-2">
+      <a aria-label="YouTube" class="text-indigo-600 hover:text-indigo-800" href="https://www.youtube.com/" rel="noopener" target="_blank">
+       <i class="fab fa-youtube fa-lg">
+       </i>
+      </a>
+      <a aria-label="Instagram" class="text-indigo-600 hover:text-indigo-800" href="https://www.instagram.com/" rel="noopener" target="_blank">
+       <i class="fab fa-instagram fa-lg">
+       </i>
+      </a>
+      <a aria-label="LinkedIn" class="text-indigo-600 hover:text-indigo-800" href="https://www.linkedin.com/" rel="noopener" target="_blank">
+       <i class="fab fa-linkedin fa-lg">
+       </i>
+      </a>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+   <footer class="bg-indigo-900 text-indigo-200 py-16 px-6 md:px-20">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+      <!-- Logo & Description -->
+      <div class="flex flex-col items-center md:items-start space-y-4">
+        <img
+          alt="Bali Beach Sports &amp; Surf Arena logo, stylized wave and sun icon"
+          class="h-16 w-16 rounded-full border-4 border-indigo-400 shadow-lg"
+          height="64"
+          src="https://storage.googleapis.com/a1aa/image/be56bc1f-05cc-4332-9cf5-b5287b117e18.jpg"
+          width="64"
+          loading="lazy"
+        />
+        <h1 class="font-playfair-display text-3xl font-extrabold tracking-wide text-white drop-shadow-lg">
+          Bali Beach Sports &amp; Surf Arena
+        </h1>
+        <p class="text-indigo-300 font-open-sans text-base max-w-sm leading-relaxed">
+          The premier destination for sports, wellness, and cultural experiences in Bali.
+        </p>
+      </div>
+
+      <!-- Navigation -->
+      <div>
+        <h3 class="text-xl font-semibold text-white mb-6 border-b border-indigo-700 pb-2 font-playfair-display">
+          Navigation
+        </h3>
+        <nav class="flex flex-col space-y-4 font-open-sans text-indigo-300 text-lg">
+          <a href="#hero" class="hover:text-white transition duration-300 ease-in-out">Home</a>
+          <a href="#about" class="hover:text-white transition duration-300 ease-in-out">About</a>
+          <a href="#unique" class="hover:text-white transition duration-300 ease-in-out">Unique</a>
+          <a href="#gallery" class="hover:text-white transition duration-300 ease-in-out">Gallery</a>
+          <a href="#contact" class="hover:text-white transition duration-300 ease-in-out">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Social Media -->
+      <div>
+        <h3 class="text-xl font-semibold text-white mb-6 border-b border-indigo-700 pb-2 font-playfair-display">
+          Connect With Us
+        </h3>
+        <div class="flex flex-col space-y-4 font-open-sans text-indigo-300 text-lg">
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener"
+            class="flex items-center space-x-4 hover:text-white transition duration-300 ease-in-out"
+            aria-label="YouTube"
+          >
+            <i class="fab fa-youtube text-3xl"></i>
+            <span>YouTube</span>
+          </a>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener"
+            class="flex items-center space-x-4 hover:text-white transition duration-300 ease-in-out"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram text-3xl"></i>
+            <span>Instagram</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener"
+            class="flex items-center space-x-4 hover:text-white transition duration-300 ease-in-out"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin text-3xl"></i>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="flex flex-col justify-start">
+        <h3 class="text-xl font-semibold text-white mb-6 border-b border-indigo-700 pb-2 font-playfair-display">
+          Contact Us
+        </h3>
+        <address class="not-italic font-open-sans text-indigo-300 text-lg space-y-2">
+          <p>123 Bali Beach Road</p>
+          <p>Denpasar, Bali 80228</p>
+          <p>Phone: <a href="tel:+628123456789" class="hover:text-white transition">+62 812 3456 789</a></p>
+          <p>Email: <a href="mailto:info@balibeachsports.com" class="hover:text-white transition">info@balibeachsports.com</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-12 border-t border-indigo-700 pt-6">
+      <p class="text-center text-indigo-400 text-sm font-open-sans select-none">
+        © 2024 Bali Beach Sports &amp; Surf Arena. All rights reserved.
+      </p>
+    </div>
+  </footer>
+  <!-- Lightbox Overlay -->
+  <div aria-label="Image preview" aria-modal="true" class="lightbox-overlay" id="lightbox" role="dialog">
+   <button aria-label="Close image preview" class="absolute top-6 right-6 text-white text-3xl focus:outline-none" id="lightboxClose">
+    <i class="fas fa-times">
+    </i>
+   </button>
+   <div class="lightbox-content max-w-5xl max-h-[90vh] mx-auto">
+    <img alt="" class="rounded-lg" id="lightboxImage" src=""/>
+   </div>
+  </div>
+  <script>
+   // Header background toggle on scroll
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if(window.scrollY > 50) {
+        header.classList.add('bg-white', 'shadow-md');
+        header.classList.remove('bg-transparent');
+        header.querySelectorAll('a, button, i').forEach(el => {
+          el.classList.remove('text-white');
+          el.classList.add('text-gray-700');
+        });
+        header.querySelector('a > span')?.classList.remove('text-white');
+        header.querySelector('a > span')?.classList.add('text-indigo-600');
+      } else {
+        header.classList.remove('bg-white', 'shadow-md');
+        header.classList.add('bg-transparent');
+        header.querySelectorAll('a, button, i').forEach(el => {
+          el.classList.add('text-white');
+          el.classList.remove('text-gray-700');
+        });
+        header.querySelector('a > span')?.classList.add('text-white');
+        header.querySelector('a > span')?.classList.remove('text-indigo-600');
+      }
+    });
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const menuCloseBtn = document.getElementById('menuCloseBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('-translate-x-full');
+      mobileMenu.classList.add('translate-x-0');
+      document.body.style.overflow = 'hidden';
+    });
+    menuCloseBtn.addEventListener('click', closeMobileMenu);
+
+    function closeMobileMenu() {
+      mobileMenu.classList.add('-translate-x-full');
+      mobileMenu.classList.remove('translate-x-0');
+      document.body.style.overflow = '';
+    }
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        closeMobileMenu();
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Hero slider controls
+    const sliderTrack = document.getElementById('sliderTrack');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const slidesCount = sliderTrack.children.length;
+    let currentIndex = 0;
+
+    function updateSlider() {
+      sliderTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+      updateThumbnails(currentIndex);
+    }
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + slidesCount) % slidesCount;
+      updateSlider();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % slidesCount;
+      updateSlider();
+    });
+
+    // Auto slide every 7 seconds
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % slidesCount;
+      updateSlider();
+    }, 7000);
+
+    // Thumbnail click for mini-map
+    const thumbnails = document.querySelectorAll('#gallery > div:nth-child(3) button');
+    thumbnails.forEach((btn, idx) => {
+      btn.addEventListener('click', () => {
+        currentIndex = idx;
+        updateSlider();
+      });
+    });
+
+    function updateThumbnails(activeIndex) {
+      thumbnails.forEach((btn, idx) => {
+        if(idx === activeIndex) {
+          btn.classList.add('border-indigo-600');
+          btn.classList.remove('border-transparent');
+        } else {
+          btn.classList.remove('border-indigo-600');
+          btn.classList.add('border-transparent');
+        }
+      });
+    }
+    updateThumbnails(0);
+
+    // Lightbox gallery for masonry images
+    const masonryImages = document.querySelectorAll('.masonry img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxClose = document.getElementById('lightboxClose');
+
+    masonryImages.forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImage.src = img.src.replace(/400x\d+/, '1200x800').replace(/text=[^&]+/, 'Gallery+Image+Large');
+        lightboxImage.alt = img.alt;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    lightboxClose.addEventListener('click', () => {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      if(e.target === lightbox) {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+
+    // Newsletter form AJAX simulation
+    const newsletterForm = document.getElementById('newsletterForm');
+    const newsletterMessage = document.getElementById('newsletterMessage');
+
+    newsletterForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const email = newsletterForm.email.value.trim();
+      if(!email || !email.includes('@')) {
+        newsletterMessage.textContent = 'Please enter a valid email address.';
+        newsletterMessage.classList.remove('text-green-400');
+        newsletterMessage.classList.add('text-red-400');
+        return;
+      }
+      newsletterMessage.textContent = 'Submitting...';
+      newsletterMessage.classList.remove('text-red-400');
+      newsletterMessage.classList.remove('text-green-400');
+
+      setTimeout(() => {
+        newsletterMessage.textContent = 'Thank you for joining the movement!';
+        newsletterMessage.classList.add('text-green-400');
+        newsletterForm.reset();
+      }, 1500);
+    });
+
+    // Contact form AJAX simulation
+    const contactForm = document.getElementById('contactForm');
+    const contactMessage = document.getElementById('contactMessage');
+
+    contactForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const name = contactForm.name.value.trim();
+      const email = contactForm.email.value.trim();
+      const message = contactForm.message.value.trim();
+
+      if(!name || !email || !email.includes('@') || !message) {
+        contactMessage.textContent = 'Please fill in all fields with valid information.';
+        contactMessage.classList.remove('text-green-400');
+        contactMessage.classList.add('text-red-400');
+        return;
+      }
+      contactMessage.textContent = 'Sending message...';
+      contactMessage.classList.remove('text-red-400');
+      contactMessage.classList.remove('text-green-400');
+
+      setTimeout(() => {
+        contactMessage.textContent = 'Your message has been sent. We will get back to you soon!';
+        contactMessage.classList.add('text-green-400');
+        contactForm.reset();
+      }, 2000);
+    });
+
+    // Initialize AOS
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: 'ease-in-out',
+    });
+
+    // Google Analytics (basic setup)
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID'); // Replace GA_MEASUREMENT_ID with your actual ID
+  </script>
+ </body>
+</html>
