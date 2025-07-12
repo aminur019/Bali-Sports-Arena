@@ -1,0 +1,975 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Bali Beach Sports &amp; Surf Arena | World's First Integrated Surf &amp; Wellness Destination
+  </title>
+  <meta content="Bali's premier integrated surf, sports, and wellness destination combining world-class facilities with sustainable tourism." name="description"/>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script>
+   tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9',
+                        secondary: '#f59e0b',
+                        dark: '#1e293b',
+                        light: '#f8fafc'
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                    },
+                }
+            }
+        }
+  </script>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .header-transparent {
+            background-color: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        .header-solid {
+            background-color: rgba(30, 41, 59, 0.95);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%);
+        }
+
+        .masonry-grid {
+            column-count: 3;
+            column-gap: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .masonry-grid {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .masonry-grid {
+                column-count: 1;
+            }
+        }
+
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-item:not(:last-child):after {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 24px;
+            height: 100%;
+            width: 2px;
+            background: #0ea5e9;
+        }
+  </style>
+   <script>
+        // Right-click নিষ্ক্রিয় করতে
+        document.addEventListener('contextmenu', (event) => event.preventDefault());
+
+        // কীবোর্ড শর্টকাট নিষ্ক্রিয় করতে
+        document.addEventListener('keydown', (event) => {
+            if (
+                (event.ctrlKey && event.key === 's') || // Ctrl+S
+                (event.ctrlKey && event.key === 'u') || // Ctrl+U
+                (event.ctrlKey && event.key === 'c') || // Ctrl+C
+                (event.key === 'F12')                  // F12
+            ) {
+                event.preventDefault();
+                alert("This action is disabled on this website.");
+            }
+        });
+
+        // Address bar থেকে লিংক কপি প্রতিরোধ (Referrer কে হ্যান্ডল করা)
+        window.onload = () => {
+            if (window.location !== window.parent.location) {
+                window.parent.location = window.location;
+            }
+        };
+    </script>
+ </head>
+ <body class="bg-white text-dark">
+  <!-- Sticky Header -->
+  <header class="fixed w-full z-50 transition-all duration-300 header-transparent" id="header">
+   <div class="container mx-auto px-4 py-4">
+    <div class="flex justify-between items-center">
+     <!-- Logo -->
+     <div class="flex items-center">
+      <a class="text-2xl font-bold text-white flex items-center" href="#">
+       <i class="fas fa-water text-primary mr-2">
+       </i>
+       <span>
+        Bali Surf Arena
+       </span>
+      </a>
+     </div>
+     <!-- Desktop Navigation -->
+     <nav class="hidden md:flex space-x-8">
+      <a class="text-white hover:text-primary transition" href="#about">
+       About
+      </a>
+      <a class="text-white hover:text-primary transition" href="#features">
+       Features
+      </a>
+      <a class="text-white hover:text-primary transition" href="#gallery">
+       Gallery
+      </a>
+      <a class="text-white hover:text-primary transition" href="#timeline">
+       Timeline
+      </a>
+      <a class="text-white hover:text-primary transition" href="#contact">
+       Contact
+      </a>
+     </nav>
+     <!-- CTA Button -->
+     <div class="hidden md:block">
+      <a class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition" href="#newsletter">
+       Stay Updated
+      </a>
+     </div>
+     <!-- Mobile Menu Button -->
+     <button aria-label="Toggle menu" class="md:hidden text-white focus:outline-none" id="menu-toggle">
+      <i class="fas fa-bars text-2xl">
+      </i>
+     </button>
+    </div>
+   </div>
+   <!-- Mobile Menu -->
+   <div class="md:hidden hidden bg-dark w-full py-4 px-4" id="mobile-menu">
+    <div class="flex flex-col space-y-4">
+     <a class="text-white hover:text-primary transition" href="#about">
+      About
+     </a>
+     <a class="text-white hover:text-primary transition" href="#features">
+      Features
+     </a>
+     <a class="text-white hover:text-primary transition" href="#gallery">
+      Gallery
+     </a>
+     <a class="text-white hover:text-primary transition" href="#timeline">
+      Timeline
+     </a>
+     <a class="text-white hover:text-primary transition" href="#contact">
+      Contact
+     </a>
+     <a class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition text-center" href="#newsletter">
+      Stay Updated
+     </a>
+    </div>
+   </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="relative h-screen flex items-center justify-center overflow-hidden">
+   <!-- Hero Background -->
+   <div class="absolute inset-0">
+    <img alt="A vibrant scene of surfers riding waves at sunset on a tropical Bali beach with palm trees and golden sky" class="w-full h-full object-cover" height="1080" src="https://storage.googleapis.com/a1aa/image/3918c4ae-3f12-4654-c70f-d71ff9a7b61e.jpg" width="2070"/>
+    <div class="absolute inset-0 hero-overlay">
+    </div>
+   </div>
+   <div class="relative z-10 text-center px-4">
+    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6" data-aos="fade-up">
+     Bali Beach Sports &amp; Surf Arena
+    </h1>
+    <p class="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+     World's First Integrated Surf, Sports &amp; Wellness Destination
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+     <a class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-full font-medium transition" href="#about">
+      Explore the Vision
+     </a>
+     <a class="bg-white hover:bg-gray-100 text-dark px-8 py-3 rounded-full font-medium transition" href="#">
+      Watch the Concept Video
+     </a>
+    </div>
+   </div>
+   <!-- Scroll Down Indicator -->
+   <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2" data-aos="fade-up" data-aos-delay="300">
+    <a aria-label="Scroll down to About section" class="text-white animate-bounce" href="#about">
+     <i class="fas fa-chevron-down text-2xl">
+     </i>
+    </a>
+   </div>
+  </section>
+  <!-- About Section -->
+  <section class="py-20 bg-light" id="about">
+   <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center gap-12">
+     <!-- Image -->
+     <div class="w-full md:w-1/2" data-aos="zoom-in">
+      <img alt="A beautiful Bali beach with golden sand, clear blue water, and bright sunshine with gentle waves" class="rounded-xl shadow-xl w-full h-auto" height="600" src="https://storage.googleapis.com/a1aa/image/b953c59a-6507-4948-db8a-0b097015a200.jpg" width="800"/>
+     </div>
+     <!-- Content -->
+     <div class="w-full md:w-1/2" data-aos="fade-left">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+       The Vision
+      </h2>
+      <p class="text-lg mb-6">
+       Bali Beach Sports &amp; Surf Arena is set to become the world's premier integrated destination for surf enthusiasts, sports lovers, and wellness seekers.
+                        Our innovative concept combines world-class facilities with Bali's natural beauty to create a unique experience.
+      </p>
+      <p class="text-lg mb-8">
+       Designed with sustainability at its core, our arena will feature cutting-edge wave technology, eco-friendly accommodations, and a holistic wellness campus,
+                        all while supporting local communities and preserving Bali's cultural heritage.
+      </p>
+      <div class="flex flex-wrap gap-4">
+       <span class="bg-primary bg-opacity-10 text-primary px-4 py-2 rounded-full flex items-center">
+        <i class="fas fa-water mr-2">
+        </i>
+        Surfing
+       </span>
+       <span class="bg-secondary bg-opacity-10 text-secondary px-4 py-2 rounded-full flex items-center">
+        <i class="fas fa-heartbeat mr-2">
+        </i>
+        Wellness
+       </span>
+       <span class="bg-green-500 bg-opacity-10 text-green-500 px-4 py-2 rounded-full flex items-center">
+        <i class="fas fa-leaf mr-2">
+        </i>
+        Sustainability
+       </span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Features Section -->
+  <section class="py-20 bg-white" id="features">
+   <div class="container mx-auto px-4">
+    <div class="text-center mb-16" data-aos="fade-up">
+     <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      What Makes Us Unique
+     </h2>
+     <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+      Discover the features that set Bali Beach Sports &amp; Surf Arena apart from any other destination
+     </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="bg-light p-8 rounded-xl shadow-sm hover:shadow-md transition" data-aos="fade-up" data-aos-delay="50">
+      <div class="text-primary text-4xl mb-4">
+       <i class="fas fa-water">
+       </i>
+      </div>
+      <h3 class="text-xl font-bold mb-3">
+       World-Class Surf Circuit
+      </h3>
+      <p class="text-gray-600">
+       Professionally designed wave pools and ocean breaks suitable for all levels, from beginners to pro surfers.
+      </p>
+     </div>
+     <div class="bg-light p-8 rounded-xl shadow-sm hover:shadow-md transition" data-aos="fade-up" data-aos-delay="100">
+      <div class="text-primary text-4xl mb-4">
+       <i class="fas fa-spa">
+       </i>
+      </div>
+      <h3 class="text-xl font-bold mb-3">
+       Holistic Wellness Campus
+      </h3>
+      <p class="text-gray-600">
+       Integrated wellness facilities including yoga studios, meditation spaces, and recovery centers.
+      </p>
+     </div>
+     <div class="bg-light p-8 rounded-xl shadow-sm hover:shadow-md transition" data-aos="fade-up" data-aos-delay="150">
+      <div class="text-primary text-4xl mb-4">
+       <i class="fas fa-tree">
+       </i>
+      </div>
+      <h3 class="text-xl font-bold mb-3">
+       Nature-Integrated Design
+      </h3>
+      <p class="text-gray-600">
+       Architecture that blends seamlessly with Bali's natural landscape, preserving the environment.
+      </p>
+     </div>
+     <div class="bg-light p-8 rounded-xl shadow-sm hover:shadow-md transition" data-aos="fade-up" data-aos-delay="200">
+      <div class="text-primary text-4xl mb-4">
+       <i class="fas fa-calendar-alt">
+       </i>
+      </div>
+      <h3 class="text-xl font-bold mb-3">
+       Year-Round Operation
+      </h3>
+      <p class="text-gray-600">
+       Consistent wave conditions regardless of season, making every month perfect for surfing.
+      </p>
+     </div>
+     <div class="bg-light p-8 rounded-xl shadow-sm hover:shadow-md transition" data-aos="fade-up" data-aos-delay="250">
+      <div class="text-primary text-4xl mb-4">
+       <i class="fas fa-users">
+       </i>
+      </div>
+      <h3 class="text-xl font-bold mb-3">
+       Community Focus
+      </h3>
+      <p class="text-gray-600">
+       Creating thousands of jobs for locals and supporting Balinese cultural preservation.
+      </p>
+     </div>
+     <div class="bg-light p-8 rounded-xl shadow-sm hover:shadow-md transition" data-aos="fade-up" data-aos-delay="300">
+      <div class="text-primary text-4xl mb-4">
+       <i class="fas fa-trophy">
+       </i>
+      </div>
+      <h3 class="text-xl font-bold mb-3">
+       Pro-Level Facilities
+      </h3>
+      <p class="text-gray-600">
+       Training centers, sports medicine, and competition venues to host international events.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Why Bali Section -->
+  <section class="py-20 bg-dark text-white relative overflow-hidden">
+   <div class="absolute inset-0">
+    <img alt="A semi-transparent map of Bali island with highlighted tourist and surf spots, overlaid with a dark filter" class="w-full h-full object-cover opacity-20" height="1080" src="https://storage.googleapis.com/a1aa/image/4f1dc47a-d89f-49e3-fa5b-71714c3c9d1b.jpg" width="2094"/>
+   </div>
+   <div class="container mx-auto px-4 relative z-10">
+    <div class="text-center mb-16" data-aos="fade-up">
+     <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      Why Bali?
+     </h2>
+     <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+      The perfect location for this groundbreaking project
+     </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <div class="text-center" data-aos="fade-up" data-aos-delay="50">
+      <div class="text-5xl text-primary mb-4">
+       <i class="fas fa-users">
+       </i>
+      </div>
+      <h3 class="text-4xl font-bold mb-2" data-count="6">
+       0
+      </h3>
+      <p class="text-xl">
+       Million+ Annual Tourists
+      </p>
+     </div>
+     <div class="text-center" data-aos="fade-up" data-aos-delay="150">
+      <div class="text-5xl text-primary mb-4">
+       <i class="fas fa-plane">
+       </i>
+      </div>
+      <h3 class="text-4xl font-bold mb-2" data-count="30">
+       0
+      </h3>
+      <p class="text-xl">
+       Direct Flight Connections
+      </p>
+     </div>
+     <div class="text-center" data-aos="fade-up" data-aos-delay="250">
+      <div class="text-5xl text-primary mb-4">
+       <i class="fas fa-heart">
+       </i>
+      </div>
+      <h3 class="text-4xl font-bold mb-2">
+       #1
+      </h3>
+      <p class="text-xl">
+       Wellness Capital of Asia
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Sustainability Section -->
+  <section class="py-20 bg-light">
+   <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center gap-12">
+     <!-- Images -->
+     <div class="w-full md:w-1/2">
+      <div class="grid grid-cols-2 gap-4">
+       <div data-aos="fade-right">
+        <img alt="Eco-friendly construction site in Bali with solar panels and green building materials surrounded by tropical plants" class="rounded-xl shadow-md w-full h-auto" height="400" src="https://storage.googleapis.com/a1aa/image/c28360ab-3b00-4d60-eb92-0080d427825f.jpg" width="600"/>
+       </div>
+       <div data-aos="fade-right" data-aos-delay="100">
+        <img alt="Local Balinese community members participating in traditional cultural activities and ceremonies outdoors" class="rounded-xl shadow-md w-full h-auto" height="400" src="https://storage.googleapis.com/a1aa/image/0a548230-f498-4570-be8a-3283453986b2.jpg" width="600"/>
+       </div>
+      </div>
+     </div>
+     <!-- Content -->
+     <div class="w-full md:w-1/2" data-aos="fade-left">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+       Sustainability &amp; Social Impact
+      </h2>
+      <p class="text-lg mb-8">
+       Our commitment goes beyond creating an exceptional visitor experience. We're dedicated to positive environmental and social impact.
+      </p>
+      <div class="space-y-6">
+       <div class="flex items-start">
+        <div class="text-primary text-xl mr-4 mt-1">
+         <i class="fas fa-bolt">
+         </i>
+        </div>
+        <div>
+         <h4 class="text-xl font-bold mb-2">
+          Renewable Energy
+         </h4>
+         <p class="text-gray-600">
+          Solar-powered facilities with zero carbon footprint targets.
+         </p>
+        </div>
+       </div>
+       <div class="flex items-start">
+        <div class="text-primary text-xl mr-4 mt-1">
+         <i class="fas fa-hands-helping">
+         </i>
+        </div>
+        <div>
+         <h4 class="text-xl font-bold mb-2">
+          Community-Based Tourism
+         </h4>
+         <p class="text-gray-600">
+          Direct partnerships with local villages for authentic cultural experiences.
+         </p>
+        </div>
+       </div>
+       <div class="flex items-start">
+        <div class="text-primary text-xl mr-4 mt-1">
+         <i class="fas fa-seedling">
+         </i>
+        </div>
+        <div>
+         <h4 class="text-xl font-bold mb-2">
+          Eco-first Development
+         </h4>
+         <p class="text-gray-600">
+          Strict environmental protection policies and habitat preservation.
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Gallery Section -->
+  <section class="py-20 bg-white" id="gallery">
+   <div class="container mx-auto px-4">
+    <div class="text-center mb-16" data-aos="fade-up">
+     <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      The Future Comes to Life
+     </h2>
+     <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+      Explore our vision through these conceptual renderings and designs
+     </p>
+    </div>
+    <!-- Masonry Gallery -->
+    <div class="masonry-grid">
+     <div class="masonry-item" data-aos="zoom-in">
+      <img alt="Concept rendering of a modern surf arena with artificial waves and spectators under a clear blue sky" class="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" height="800" src="https://storage.googleapis.com/a1aa/image/f1c1e031-3c12-46c2-a96f-0172dc657a49.jpg" width="600"/>
+     </div>
+     <div class="masonry-item" data-aos="zoom-in" data-aos-delay="50">
+      <img alt="Beach sports activities showing players engaged in volleyball and soccer on a sunny Bali beach" class="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" height="700" src="https://storage.googleapis.com/a1aa/image/67bc0966-f2f0-4090-c8e9-e405e5d6ff77.jpg" width="600"/>
+     </div>
+     <div class="masonry-item" data-aos="zoom-in" data-aos-delay="100">
+      <img alt="Wellness center featuring yoga and meditation spaces surrounded by tropical greenery and natural light" class="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" height="900" src="https://storage.googleapis.com/a1aa/image/14cf8d70-d735-4029-7b67-c6a54787f6fa.jpg" width="600"/>
+     </div>
+     <div class="masonry-item" data-aos="zoom-in" data-aos-delay="150">
+      <img alt="Luxury resort concept with infinity pool overlooking the ocean and lush tropical landscape" class="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" height="600" src="https://storage.googleapis.com/a1aa/image/65bdfe47-cb6c-4c7e-0278-0cd982a53a58.jpg" width="600"/>
+     </div>
+     <div class="masonry-item" data-aos="zoom-in" data-aos-delay="200">
+      <img alt="Scenic beach view at sunset with golden sky, palm trees, and calm ocean waves" class="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" height="750" src="https://storage.googleapis.com/a1aa/image/80dddc24-fb3c-431c-568b-125002a6f8a4.jpg" width="600"/>
+     </div>
+     <div class="masonry-item" data-aos="zoom-in" data-aos-delay="250">
+      <img alt="Wave pool with surfers riding artificial waves surrounded by tropical plants and modern facilities" class="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" height="650" src="https://storage.googleapis.com/a1aa/image/8d31526e-7155-4305-1cc5-21fbcb2c6f6f.jpg" width="600"/>
+     </div>
+    </div>
+    <!-- View More Button -->
+    <div class="text-center mt-12" data-aos="fade-up">
+     <button class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-full font-medium transition">
+      View Full Gallery
+     </button>
+    </div>
+   </div>
+  </section>
+  <!-- Timeline Section -->
+  <section class="py-20 bg-dark text-white" id="timeline">
+   <div class="container mx-auto px-4">
+    <div class="text-center mb-16" data-aos="fade-up">
+     <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      Development Phases
+     </h2>
+     <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+      Our roadmap to creating this world-class destination
+     </p>
+    </div>
+    <div class="max-w-3xl mx-auto">
+     <div class="relative pl-8 pb-8 timeline-item" data-aos="fade-up">
+      <div class="absolute left-0 top-0 w-4 h-4 bg-primary rounded-full z-10">
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+       <div class="flex justify-between items-center mb-2">
+        <h3 class="text-xl font-bold">
+         Phase 1: Groundbreaking
+        </h3>
+        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">
+         2024
+        </span>
+       </div>
+       <p class="text-gray-300">
+        Site preparation, environmental impact studies, and initial infrastructure development.
+       </p>
+      </div>
+     </div>
+     <div class="relative pl-8 pb-8 timeline-item" data-aos="fade-up" data-aos-delay="100">
+      <div class="absolute left-0 top-0 w-4 h-4 bg-primary rounded-full z-10">
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+       <div class="flex justify-between items-center mb-2">
+        <h3 class="text-xl font-bold">
+         Phase 2: Surf &amp; Beach Arena
+        </h3>
+        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">
+         2025
+        </span>
+       </div>
+       <p class="text-gray-300">
+        Completion of wave pools, beach facilities, and initial sports infrastructure.
+       </p>
+      </div>
+     </div>
+     <div class="relative pl-8 pb-8 timeline-item" data-aos="fade-up" data-aos-delay="200">
+      <div class="absolute left-0 top-0 w-4 h-4 bg-primary rounded-full z-10">
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+       <div class="flex justify-between items-center mb-2">
+        <h3 class="text-xl font-bold">
+         Phase 3: Wellness Campus
+        </h3>
+        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">
+         2026
+        </span>
+       </div>
+       <p class="text-gray-300">
+        Opening of holistic wellness facilities, spa retreats, and meditation centers.
+       </p>
+      </div>
+     </div>
+     <div class="relative pl-8 timeline-item" data-aos="fade-up" data-aos-delay="300">
+      <div class="absolute left-0 top-0 w-4 h-4 bg-primary rounded-full z-10">
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+       <div class="flex justify-between items-center mb-2">
+        <h3 class="text-xl font-bold">
+         Phase 4: Full Completion
+        </h3>
+        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">
+         2027
+        </span>
+       </div>
+       <p class="text-gray-300">
+        Final touches, luxury accommodations, and international certification.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Testimonials Section -->
+  <section class="py-20 bg-light">
+   <div class="container mx-auto px-4">
+    <div class="text-center mb-16" data-aos="fade-up">
+     <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      Endorsements
+     </h2>
+     <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+      What industry leaders say about our project
+     </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <div class="bg-white p-8 rounded-xl shadow-sm" data-aos="fade-right">
+      <div class="flex items-center mb-4">
+       <img alt="Portrait of John Smith, a pro surfer" class="w-12 h-12 rounded-full mr-4" height="48" src="https://storage.googleapis.com/a1aa/image/abb71cd7-dc5a-46f0-c643-ffe5529bed5b.jpg" width="48"/>
+       <div>
+        <h4 class="font-bold">
+         John Smith
+        </h4>
+        <p class="text-gray-500 text-sm">
+         Pro Surfer
+        </p>
+       </div>
+      </div>
+      <p class="text-gray-600">
+       "This will revolutionize competitive surfing with consistent, high-quality waves available year-round. The training facilities are unmatched."
+      </p>
+      <div class="mt-4 text-yellow-400">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+      </div>
+     </div>
+     <div class="bg-white p-8 rounded-xl shadow-sm" data-aos="fade-up">
+      <div class="flex items-center mb-4">
+       <img alt="Portrait of Sarah Johnson, Bali Tourism Board representative" class="w-12 h-12 rounded-full mr-4" height="48" src="https://storage.googleapis.com/a1aa/image/9a613bc1-959f-470a-7c28-34fefa55ebf1.jpg" width="48"/>
+       <div>
+        <h4 class="font-bold">
+         Sarah Johnson
+        </h4>
+        <p class="text-gray-500 text-sm">
+         Bali Tourism Board
+        </p>
+       </div>
+      </div>
+      <p class="text-gray-600">
+       "A perfect blend of sports, wellness, and sustainable tourism that aligns with Bali's vision for high-value, low-impact tourism."
+      </p>
+      <div class="mt-4 text-yellow-400">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+      </div>
+     </div>
+     <div class="bg-white p-8 rounded-xl shadow-sm" data-aos="fade-left">
+      <div class="flex items-center mb-4">
+       <img alt="Portrait of Michael Chen, investor" class="w-12 h-12 rounded-full mr-4" height="48" src="https://storage.googleapis.com/a1aa/image/b800d1cf-adb5-4b92-95ae-3533c70f7255.jpg" width="48"/>
+       <div>
+        <h4 class="font-bold">
+         Michael Chen
+        </h4>
+        <p class="text-gray-500 text-sm">
+         Investor
+        </p>
+       </div>
+      </div>
+      <p class="text-gray-600">
+       "The most innovative sports tourism project I've seen. The market potential is enormous, and the team has a clear, executable vision."
+      </p>
+      <div class="mt-4 text-yellow-400">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+     </div>
+    </div>
+    <!-- Partner Logos -->
+    <div class="mt-16 flex flex-wrap justify-center items-center gap-8 md:gap-16" data-aos="zoom-in">
+     <img alt="ESPN logo" class="h-8 opacity-70 hover:opacity-100 transition" height="60" src="https://storage.googleapis.com/a1aa/image/0af0b78f-93a4-48a6-27f0-1ee1a06b8ba7.jpg" width="150"/>
+     <img alt="Surfline logo" class="h-8 opacity-70 hover:opacity-100 transition" height="60" src="https://storage.googleapis.com/a1aa/image/2c2cb8b2-eea7-41e0-1d99-094ee7c92c5e.jpg" width="150"/>
+     <img alt="Bloomberg logo" class="h-8 opacity-70 hover:opacity-100 transition" height="60" src="https://storage.googleapis.com/a1aa/image/d6f54fea-f96b-4f63-c823-b87668b7bc84.jpg" width="150"/>
+     <img alt="Forbes logo" class="h-8 opacity-70 hover:opacity-100 transition" height="60" src="https://storage.googleapis.com/a1aa/image/391dcbba-23e7-4198-f3f9-643c59bdfbed.jpg" width="150"/>
+    </div>
+   </div>
+  </section>
+  <!-- Newsletter Section -->
+  <section class="py-20 bg-primary text-white relative overflow-hidden" id="newsletter">
+   <div class="absolute inset-0">
+    <img alt="Ocean background with waves and sunlight reflecting on water surface" class="w-full h-full object-cover opacity-20" height="1080" src="https://storage.googleapis.com/a1aa/image/2a09e314-53dd-4d87-9173-85e1a5edde4b.jpg" width="2073"/>
+   </div>
+   <div class="container mx-auto px-4 relative z-10">
+    <div class="max-w-2xl mx-auto text-center" data-aos="fade-up">
+     <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      Stay Updated
+     </h2>
+     <p class="text-xl mb-8">
+      Get the latest updates, sneak previews, and launch invites.
+     </p>
+     <form aria-label="Newsletter subscription form" class="flex flex-col sm:flex-row gap-4">
+      <input aria-label="Email address" class="flex-grow px-6 py-3 rounded-full text-dark focus:outline-none" placeholder="Your email address" required="" type="email"/>
+      <button class="bg-dark hover:bg-gray-900 text-white px-8 py-3 rounded-full font-medium transition" type="submit">
+       Join the Movement
+      </button>
+     </form>
+     <p class="text-sm mt-4 opacity-80">
+      We respect your privacy. Unsubscribe at any time.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="py-20 bg-white" id="contact">
+   <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row gap-12">
+     <!-- Contact Form -->
+     <div class="w-full md:w-1/2" data-aos="fade-right">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+       Get In Touch
+      </h2>
+      <form aria-label="Contact form" class="space-y-6">
+       <div>
+        <label class="block mb-2 font-medium" for="name">
+         Name
+        </label>
+        <input class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" id="name" name="name" required="" type="text"/>
+       </div>
+       <div>
+        <label class="block mb-2 font-medium" for="email">
+         Email
+        </label>
+        <input class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" id="email" name="email" required="" type="email"/>
+       </div>
+       <div>
+        <label class="block mb-2 font-medium" for="message">
+         Message
+        </label>
+        <textarea class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" id="message" name="message" required="" rows="5"></textarea>
+       </div>
+       <button class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-full font-medium transition" type="submit">
+        Send Message
+       </button>
+      </form>
+     </div>
+     <!-- Map & Contact Info -->
+     <div class="w-full md:w-1/2" data-aos="fade-left">
+      <div class="h-80 bg-gray-200 rounded-xl overflow-hidden mb-8">
+       <iframe allowfullscreen="" height="100%" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15797.042115847804!2d115.166086!3d-8.4554715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd22f7520fca7d3%3A0x2872b62cc456cd84!2sBali!5e0!3m2!1sen!2sid!4v1621234567890!5m2!1sen!2sid" style="border:0;" title="Map of Bali" width="100%">
+       </iframe>
+      </div>
+      <div class="space-y-6">
+       <div class="flex items-start">
+        <div class="text-primary text-xl mr-4 mt-1">
+         <i class="fas fa-map-marker-alt">
+         </i>
+        </div>
+        <div>
+         <h4 class="text-xl font-bold mb-2">
+          Location
+         </h4>
+         <p class="text-gray-600">
+          Bukit Peninsula, Bali, Indonesia
+         </p>
+        </div>
+       </div>
+       <div class="flex items-start">
+        <div class="text-primary text-xl mr-4 mt-1">
+         <i class="fas fa-envelope">
+         </i>
+        </div>
+        <div>
+         <h4 class="text-xl font-bold mb-2">
+          Email
+         </h4>
+         <p class="text-gray-600">
+          info@balisurfarena.com
+         </p>
+        </div>
+       </div>
+       <div class="flex items-start">
+        <div class="text-primary text-xl mr-4 mt-1">
+         <i class="fas fa-phone-alt">
+         </i>
+        </div>
+        <div>
+         <h4 class="text-xl font-bold mb-2">
+          Phone
+         </h4>
+         <p class="text-gray-600">
+          +62 361 123 4567
+         </p>
+        </div>
+       </div>
+       <div class="flex space-x-6 pt-4">
+        <a aria-label="Instagram" class="text-dark hover:text-primary text-2xl transition" href="#">
+         <i class="fab fa-instagram">
+         </i>
+        </a>
+        <a aria-label="Facebook" class="text-dark hover:text-primary text-2xl transition" href="#">
+         <i class="fab fa-facebook">
+         </i>
+        </a>
+        <a aria-label="YouTube" class="text-dark hover:text-primary text-2xl transition" href="#">
+         <i class="fab fa-youtube">
+         </i>
+        </a>
+        <a aria-label="LinkedIn" class="text-dark hover:text-primary text-2xl transition" href="#">
+         <i class="fab fa-linkedin">
+         </i>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-12">
+   <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+     <div class="mb-8 md:mb-0">
+      <a class="text-2xl font-bold text-white flex items-center" href="#">
+       <i class="fas fa-water text-primary mr-2">
+       </i>
+       <span>
+        Bali Surf Arena
+       </span>
+      </a>
+      <p class="mt-2 text-gray-400 max-w-md">
+       World's First Integrated Surf, Sports &amp; Wellness Destination
+      </p>
+     </div>
+     <div class="mb-8 md:mb-0">
+      <h4 class="text-lg font-bold mb-4">
+       Quick Links
+      </h4>
+      <ul class="space-y-2">
+       <li>
+        <a class="text-gray-400 hover:text-white transition" href="#about">
+         About
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-400 hover:text-white transition" href="#features">
+         Features
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-400 hover:text-white transition" href="#gallery">
+         Gallery
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-400 hover:text-white transition" href="#contact">
+         Contact
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h4 class="text-lg font-bold mb-4">
+       Connect With Us
+      </h4>
+      <div class="flex space-x-4">
+       <a aria-label="Instagram" class="bg-gray-700 hover:bg-primary w-10 h-10 rounded-full flex items-center justify-center transition" href="#">
+        <i class="fab fa-instagram">
+        </i>
+       </a>
+       <a aria-label="Facebook" class="bg-gray-700 hover:bg-primary w-10 h-10 rounded-full flex items-center justify-center transition" href="#">
+        <i class="fab fa-facebook-f">
+        </i>
+       </a>
+       <a aria-label="YouTube" class="bg-gray-700 hover:bg-primary w-10 h-10 rounded-full flex items-center justify-center transition" href="#">
+        <i class="fab fa-youtube">
+        </i>
+       </a>
+       <a aria-label="LinkedIn" class="bg-gray-700 hover:bg-primary w-10 h-10 rounded-full flex items-center justify-center transition" href="#">
+        <i class="fab fa-linkedin-in">
+        </i>
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+     <p>
+      © 2023 Bali Beach Sports &amp; Surf Arena. All rights reserved.
+     </p>
+    </div>
+   </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+  </script>
+  <script>
+   AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.remove('header-transparent');
+                header.classList.add('header-solid');
+            } else {
+                header.classList.add('header-transparent');
+                header.classList.remove('header-solid');
+            }
+        });
+
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', function () {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        function animateCounters() {
+            const counters = document.querySelectorAll('[data-count]');
+            const speed = 200;
+
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-count');
+                let count = +counter.innerText.replace(/[^\d]/g, '') || 0;
+                const increment = target / speed;
+
+                if (count < target) {
+                    count = Math.min(target, Math.ceil(count + increment));
+                    counter.innerText = count + (target === 6 ? 'M+' : '');
+                    setTimeout(animateCounters, 10);
+                } else {
+                    counter.innerText = target + (target === 6 ? 'M+' : '');
+                }
+            });
+        }
+
+        const whyBaliSection = document.querySelector('section.bg-dark.text-white');
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                animateCounters();
+                observer.unobserve(whyBaliSection);
+            }
+        }, { threshold: 0.5 });
+
+        observer.observe(whyBaliSection);
+  </script>
+ </body>
+</html>
